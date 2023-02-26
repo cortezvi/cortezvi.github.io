@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
    <meta name="description" content="" />
    <meta name="author" content="" />
    <title>CortezView at Las Mananitas</title>
-   <!-- Favicon-->
    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-   <!-- Font Awesome icons (free version)-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css" integrity="sha512-MQXduO8IQnJVq1qmySpN87QQkiR1bZHtorbJBD0tzy7/0U9+YIC93QWHeGTEoojMVHWWNkoCp8V6OzVSYrX0oQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/themes/dark.min.css" integrity="sha512-9j8LE+fuBZgXOsSyiXCw0LmM4LSLIo94AYem4pQzyqlbw5wC4qK2ytHjOLy9pGH3DbvoXawLPuiVfr8gXOKXWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/plugins/rangePlugin.min.js" integrity="sha512-44bA1YzQUqHACfLj2v0wEdX9z6EmlALcta6ENgPZnxH/aIiuBw92he+M/51kTCueY/2DsqEYM7mCwGUyO2q79w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-   <!-- Google fonts-->
    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
    <!-- Core theme CSS (includes Bootstrap)-->
@@ -28,13 +27,18 @@
             Menu
             <i class="fas fa-bars ms-1"></i>
          </button>
-         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+         <div class="collapse navbar-collapse align-items-center" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0 align-items-center">
                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                <li class="nav-item"><a class="nav-link" href="#portfolio">Activites</a></li>
                <li class="nav-item"><a class="nav-link" href="#about">Features</a></li>
-               <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+               <li class="nav-item"><a class="nav-link" href="#team">Rates</a></li>
                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+               <li class="nav-item"><a class="nav-link" href="#contact">
+                  <button type="button" class="btn btn-primary text-uppercase fw-bolder">
+                     Book Now
+                  </button>
+               </a></li>
             </ul>
          </div>
       </div>
@@ -110,7 +114,7 @@
                      <div class="portfolio-hover">
                         <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                      </div>
-                     <img class="rounded mx-auto d-block" src="assets/img/activities/MarlinPic.png" alt="Fishing" />
+                     <img class="img-fluid rounded mx-auto d-block" src="assets/img/activities/MarlinPic.png" alt="Fishing" />
                   </a>
                   <div class="portfolio-caption">
                      <div class="portfolio-caption-heading" class="w-100">Fishing</div>
@@ -125,7 +129,7 @@
                      <div class="portfolio-hover">
                         <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                      </div>
-                     <img class="rounded mx-auto d-block" src="assets/img/activities/AtvRides.jpg" alt="..." />
+                     <img class="img-fluid rounded mx-auto d-block" src="assets/img/activities/AtvRides.jpg" alt="..." />
                   </a>
                   <div class="portfolio-caption">
                      <div class="portfolio-caption-heading">ATV Rides</div>
@@ -140,7 +144,7 @@
                      <div class="portfolio-hover">
                         <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                      </div>
-                     <img class="rounded mx-auto d-block" src="assets/img/activities/snorkeling.jpg" alt="..." />
+                     <img class="img-fluid rounded mx-auto d-block" src="assets/img/activities/snorkeling.jpg" alt="..." />
                   </a>
                   <div class="portfolio-caption">
                      <div class="portfolio-caption-heading">Snorkeling</div>
@@ -155,7 +159,7 @@
                      <div class="portfolio-hover">
                         <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                      </div>
-                     <img class="rounded mx-auto d-block" src="assets/img/activities/Offroading.png" alt="..." />
+                     <img class="img-fluid rounded mx-auto d-block" src="assets/img/activities/Offroading.png" alt="..." />
                   </a>
                   <div class="portfolio-caption">
                      <div class="portfolio-caption-heading">Offroading</div>
@@ -170,7 +174,7 @@
                      <div class="portfolio-hover">
                         <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                      </div>
-                     <img class="img-fluid" src="assets/img/activities/golf.jpg" alt="..." />
+                     <img class="img-fluid rounded mx-auto d-block" src="assets/img/activities/golf.jpg" alt="..." />
                   </a>
                   <div class="portfolio-caption">
                      <div class="portfolio-caption-heading">Golf</div>
@@ -185,7 +189,7 @@
                      <div class="portfolio-hover">
                         <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                      </div>
-                     <img class="img-fluid" src="assets/img/activities/whaleWatching.jpeg" alt="..." />
+                     <img class="img-fluid rounded mx-auto d-block" src="assets/img/activities/whaleWatching.jpeg" alt="..." />
                   </a>
                   <div class="portfolio-caption">
                      <div class="portfolio-caption-heading">Whale Watching</div>
@@ -288,54 +292,48 @@
    <section class="page-section bg-light" id="team">
       <div class="container">
          <div class="text-center">
-            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Seasonal Rates</h2>
+            <h3 class="section-subheading text-muted">6 Nights minimum. Contact us for monthly rates.</h3>
          </div>
-         <div class="row">
-            <div class="col-lg-4">
-               <div class="team-member">
-                  <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                  <h4>Parveen Anand</h4>
-                  <p class="text-muted">Lead Designer</p>
-                  <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i
-                        class="fab fa-twitter"></i></a>
-                  <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i
-                        class="fab fa-facebook-f"></i></a>
-                  <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i
-                        class="fab fa-linkedin-in"></i></a>
-               </div>
-            </div>
-            <div class="col-lg-4">
-               <div class="team-member">
-                  <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                  <h4>Diana Petersen</h4>
-                  <p class="text-muted">Lead Marketer</p>
-                  <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i
-                        class="fab fa-twitter"></i></a>
-                  <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i
-                        class="fab fa-facebook-f"></i></a>
-                  <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i
-                        class="fab fa-linkedin-in"></i></a>
-               </div>
-            </div>
-            <div class="col-lg-4">
-               <div class="team-member">
-                  <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                  <h4>Larry Parker</h4>
-                  <p class="text-muted">Lead Developer</p>
-                  <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i
-                        class="fab fa-twitter"></i></a>
-                  <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i
-                        class="fab fa-facebook-f"></i></a>
-                  <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i
-                        class="fab fa-linkedin-in"></i></a>
-               </div>
+         <div class="row justify-content-center table-responsive">
+            <div class="col-md-6 text-center">
+               <table class="table">
+                  <thead>
+                     <tr>
+                        <th scope="col">Date Intervals</th>
+                        <th scope="col">Price Per Night of Stay (USD)</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <th scope="row">May 16 to Sept 30</th>
+                        <td>$395/night</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">Oct 1st - Dec 15th</th>
+                        <td>$425/night</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">Dec 16th - Jan 04th</th>
+                        <td colspan="2">$550/night</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">Jan 5th - May 15th</th>
+                        <td colspan="2">$525/night</td>
+                     </tr>
+                  </tbody>
+               </table>
             </div>
          </div>
-         <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-               <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
-                  laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+         <div class="row align-items-center justify-content-center">
+            Date Picker Test:
+            <div class="flatpickr form-floating col-sm-auto justify-content-center">
+               <input type="text" id="datePickerStart" class="form-control" placeholder="Start date" data-input>
+               <label for="datePickerStart">Start Date</label>
+            </div>
+            <div class="flatpickr form-floating col-sm-auto justify-content-center">
+               <input type="text" id="datePickerEnd" class="form-control" placeholder="End Date" data-input>
+               <label for="datePickerEnd">End Date</label>
             </div>
          </div>
       </div>
@@ -706,6 +704,21 @@
    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js" integrity="sha512-K/oyQtMXpxI4+K0W7H25UopjM8pzq0yrVdFdG21Fh5dBe91I40pDd9A4lzNlHPHBIP2cwZuoxaUSX0GJSObvGA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script type="text/javascript">
+      flatpickr("#datePickerStart", {
+         // inline: true,
+         mode: "range",
+         minDate: "today",
+         dateFormat: "Y-m-d",
+         disable: [
+            function (date) {
+               return !(date.getDate() % 8); // example: disable every multiple of 8
+            }
+         ],
+         "plugins": [new rangePlugin({ input: "#datePickerEnd"})]
+      });
+   </script>
 </body>
 
 </html>
